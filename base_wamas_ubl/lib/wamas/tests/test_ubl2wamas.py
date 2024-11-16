@@ -5,6 +5,9 @@ from ..utils import set_value_to_string
 
 
 class TestUbl2wamas(unittest.TestCase):
+
+    maxDiff = None
+
     def test_helpers(self):
         dict_data = {
             "str": [

@@ -9,6 +9,9 @@ from ..wamas2ubl import wamas2dict
 
 
 class TestWamas2dict(unittest.TestCase):
+
+    maxDiff = None
+
     def _test(self, filename):
         with file_open(
             file_path("tests/samples/%s.wamas" % filename)

@@ -408,7 +408,7 @@ def fw2dict(line, grammar, telegram_type):
             dp = fdef["dp"]
             val = float(b[:-dp] + "." + b[-dp:])
         else:
-            val = escape(b.rstrip())
+            val = str(escape(b.rstrip()))
         res[fname] = val
     _logger.debug(pformat(res))
     return res
