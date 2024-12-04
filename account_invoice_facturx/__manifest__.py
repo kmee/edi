@@ -17,7 +17,7 @@
         "base_facturx",
         "base_vat",
     ],
-    "external_dependencies": {"python": ["factur-x"]},
+    "external_dependencies": {"python": ["factur-x<=3.1"]},
     "data": [
         "views/res_partner.xml",
         "views/account_move.xml",
